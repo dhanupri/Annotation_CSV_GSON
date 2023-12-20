@@ -2,14 +2,11 @@ package bridgelabz;
 
 import com.opencsv.CSVReader;
 import com.opencsv.exceptions.CsvException;
-import com.opencsv.exceptions.CsvValidationException;
-
 import java.io.IOException;
 import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
-
 //Read csv file into String array
 public class OpenCSVReader {
     private static final String SAMPLE_CSV_FILE_PATH="E:\\ThirdParty\\src\\main\\java\\bridgelabz\\user1.csv";
@@ -23,10 +20,7 @@ public class OpenCSVReader {
             System.out.println("Phone:"+nextRecord[2]);
             System.out.println("Country:"+nextRecord[3]);
             System.out.println("=================================");
-
-
         }
-
         //Reading all records at once into a list
         List<String[]> records= (List<String[]>) csvReader.readAll();
         for (String[] record:records){
@@ -36,8 +30,5 @@ public class OpenCSVReader {
             System.out.println("Country:"+record[3]);
             System.out.println("=================================");
         }
-
-
     }
-
 }

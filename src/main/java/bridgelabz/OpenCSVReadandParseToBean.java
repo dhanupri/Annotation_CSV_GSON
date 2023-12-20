@@ -9,7 +9,6 @@ import java.io.Reader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Iterator;
-
 public class OpenCSVReadandParseToBean {
     private static final String SAMPLE_CSV_FILE_PATH="E:\\ThirdParty\\src\\main\\java\\bridgelabz\\record.csv";
     public static void main(String[] args) throws IOException {
@@ -23,8 +22,6 @@ public class OpenCSVReadandParseToBean {
             System.out.println("Phone:"+csvUser.getPhone());
             System.out.println("Country:"+csvUser.getCountry());
             System.out.println("=================================");
-
         }
-
     }
 }
